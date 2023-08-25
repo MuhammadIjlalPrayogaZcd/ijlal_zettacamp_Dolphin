@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="../style.css" />
+      <title>Company Website</title>
+      <style>
+         td {
+            padding: 20px;
+         }
+      </style>
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="header">
+            <h1 class="judul">Register Your identity</h1>
+         </div>
+         <div class="container">
+            <div class="main">
+               <form action="profile.html">
+                  <table>
+                     <tr>
+                        <td><label for="first-name">First Name</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="first-name" name="first-name" required /></td>
+                     </tr>
+                     <tr>
+                        <td><label for="last-name">Last Name</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="last-name" name="last-name" required /></td>
+                     </tr>
+                     <tr>
+                        <td><label for="email">Email</label></td>
+                        <td>:</td>
+                        <td><input type="email" id="email" name="email" required /></td>
+                     </tr>
+                     <tr>
+                        <td><label for="telephone">Telephone</label></td>
+                        <td>:</td>
+                        <td>
+                           <input type="tel" id="telephone" name="telephone" pattern="[0-9]{12}" required />
+                        </td>
+                     </tr>
+                     <tr>
+                        <td><label for="age">Age</label></td>
+                        <td>:</td>
+                        <td>
+                           <input type="number" id="age" name="age" min="18" max="120" required />
+                        </td>
+                     </tr>
+                     <tr>
+                        <td><label>Type Of Account</label></td>
+                        <td>:</td>
+                        <td>
+                           <input type="radio" id="free" name="typeofacc" value="free" />
+                           <label for="free">Free</label>
+                           <input type="radio" id="personal" name="typeofacc" value="personal" />
+                           <label for="personal">Personal</label>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                           <input class="fcc-btn" style="margin: 0" type="submit" value="Submit" />
+                        </td>
+                     </tr>
+                  </table>
+               </form>
+               <hr />
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <p class="copyright">&copy; 2020 Milraga</p>
+      </div>
+   </body>
+</html>

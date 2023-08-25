@@ -1,0 +1,316 @@
+/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol,
+ul {
+   list-style: none;
+}
+blockquote,
+q {
+   quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: "";
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/* Style Web */
+body {
+   font: 16px/26px arial, sans-serif;
+   /* ukuran, jarak antar baris, style */
+   background-color: #eaeaea;
+   color: #333333;
+   background-image: url(assets/positive.png);
+}
+
+.container {
+   width: 960px;
+   margin: auto;
+   background-color: white;
+}
+
+.header {
+   padding: 20px;
+}
+
+.header .judul {
+   font-size: 40px;
+   font-weight: bold;
+}
+
+.header ul li {
+   display: inline-block;
+   margin-top: 20px;
+   margin-right: 10px;
+}
+
+.header a {
+   text-decoration: none;
+   color: salmon;
+   padding: 5px;
+}
+
+.header a:hover {
+   background-color: lightseagreen;
+   color: white;
+}
+
+.hero {
+   height: 320px;
+   border-top: 5px solid salmon;
+   border-bottom: 5px solid lightseagreen;
+}
+
+.hero img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+hr {
+   border: 0;
+   margin-top: 20px;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.main {
+   padding: 20px;
+   padding-bottom: 100px;
+   box-sizing: border-box;
+}
+
+.main .identity {
+   text-align: center;
+   margin: 20px;
+}
+
+.main h2 {
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.main h4 {
+   font-size: 16px;
+   font-weight: normal;
+}
+
+.main p {
+   margin-bottom: 20px;
+   font-size: 14px;
+}
+
+.main .about-company {
+   padding-top: 30px;
+}
+
+.main .about-company h2 {
+   text-align: center;
+}
+
+.main .about-company p {
+   margin: 15px;
+}
+
+.main .contact {
+   padding-top: 30px;
+}
+
+.main .contact h2 {
+   text-align: center;
+}
+
+#card {
+   background: #fbfbfb;
+   width: 300px;
+   height: 350px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   transition: 0.3s;
+   display: inline-flex;
+   margin-left: 100px;
+}
+
+#card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#card-content {
+   padding: 10px;
+}
+
+#card-content h3 {
+   font-size: 20px;
+   font-weight: bold;
+   text-align: center;
+}
+
+#card-content h5 {
+   font-size: 10px;
+   font-weight: bold;
+   text-align: center;
+}
+
+#card-content p {
+   font-size: small;
+}
+
+.featured-image-self {
+   width: 280px;
+   height: 250px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.mailto {
+   font-size: normal;
+   text-decoration: none;
+   color: salmon;
+}
+
+.mailto:hover {
+   font-size: normal;
+   text-decoration: none;
+   background-color: lightseagreen;
+   color: white;
+}
+
+.fcc-btn {
+   background-color: salmon;
+   color: white;
+   padding: 15px 25px;
+   text-decoration: none;
+   margin: 0 75px;
+}
+
+.fcc-btn:hover {
+   text-decoration: none;
+   background-color: lightseagreen;
+   color: white;
+}
+
+.footer {
+   background-color: #333333;
+   padding: 10px;
+}
+
+.footer .copyright {
+   color: #eaeaea;
+   text-align: center;
+   font-size: 13px;
+}
