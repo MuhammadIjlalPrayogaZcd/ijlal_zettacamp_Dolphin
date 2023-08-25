@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Inventory</title>
+      <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+         }
+         .container {
+            width: 45%;
+            height: 600px;
+            overflow-y: scroll;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            float: left;
+         }
+         ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px;
+         }
+         li {
+            padding: 5px 0;
+         }
+         .card {
+            width: 400px;
+            margin: 0.5rem;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+         }
+         .card img {
+            width: 100px;
+            max-height: 90px;
+            object-fit: cover;
+            object-position: center;
+         }
+         .component {
+            margin-left: 20px;
+         }
+         .price {
+            font-size: small;
+            font-style: italic;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <h2>Items in Storage</h2>
+         <ul>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/phone.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Poco Phone</h2>
+                     <span class="price">US$ 500</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/keyboard.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Mechanical Keyboard</h2>
+                     <span class="price">US$ 80</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/speaker.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Speaker</h2>
+                     <span class="price">US$ 30</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/headset.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Headphones</h2>
+                     <span class="price">US$ 40</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/monitor.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Monitor</h2>
+                     <span class="price">US$ 500</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/camera.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Camera</h2>
+                     <span class="price">US$ 400</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/drone.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Drone</h2>
+                     <span class="price">US$ 330</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/gopro.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">GoPro</h2>
+                     <span class="price">US$ 55</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/airpuri.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Air Purifier</h2>
+                     <span class="price">US$ 220</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/harddisk.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Harddisk</h2>
+                     <span class="price">US$ 50</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/controller.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Game Controller</h2>
+                     <span class="price">US$ 65</span>
+                  </div>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <div class="container">
+         <h2>Items Sold</h2>
+         <ul>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/flashdisk.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Flashdisk</h2>
+                     <span class="price">US$ 15</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/powerbank.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Power Bank</h2>
+                     <span class="price">US$ 45</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/mouse.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Mouse</h2>
+                     <span class="price">US$ 10</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/watch.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Watch</h2>
+                     <span class="price">US$ 40</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/tablet.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Tablet</h2>
+                     <span class="price">US$ 600</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/TWS.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">TWS (True Wireless Stereo)</h2>
+                     <span class="price">US$ 50</span>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="card" style="display: flex; flex-direction: row">
+                  <div class="component">
+                     <img src="../image/mic.jpg" alt="Smartphone 1" />
+                  </div>
+                  <div class="component">
+                     <h2 style="margin-bottom: 5px">Microphone</h2>
+                     <span class="price">US$ 55</span>
+                  </div>
+               </div>
+            </li>
+         </ul>
+      </div>
+   </body>
+</html>
