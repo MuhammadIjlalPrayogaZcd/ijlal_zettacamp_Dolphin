@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Book Inventory</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <style>
+      #form-table tr td {
+         padding: 10px;
+         width: 100px;
+      }
+   </style>
+   <body>
+      <h1 class="navbar-sticky">Book Inventory</h1>
+
+      <form id="add-book-form" style="display: none">
+         <div class="card">
+            <table id="form-table">
+               <tr>
+                  <td>
+                     <label for="name">Name</label>
+                  </td>
+                  <td>:</td>
+                  <td><input type="text" id="name" name="name" required /><br /></td>
+               </tr>
+               <tr>
+                  <td>
+                     <label for="author">Author</label>
+                  </td>
+                  <td>:</td>
+                  <td><input type="text" id="author" name="author" required /><br /></td>
+               </tr>
+               <tr>
+                  <td>
+                     <label for="description">Description</label>
+                  </td>
+                  <td>:</td>
+                  <td><input type="text" id="description" name="description" required /><br /></td>
+               </tr>
+               <tr>
+                  <td>
+                     <label for="totalCount">Total Count</label>
+                  </td>
+                  <td>:</td>
+                  <td><input type="number" min="0" id="totalCount" name="totalCount" required /><br /></td>
+               </tr>
+            </table>
+
+            <button id="save-new-book-btn">Save</button>
+            <button id="cancel-new-book-btn">Cancel</button>
+         </div>
+      </form>
+
+      <table id="book-table">
+         <thead>
+            <tr>
+               <td>Book Name</td>
+               <td>Book Author</td>
+               <td>Book Description</td>
+               <td>Book Total Count</td>
+               <td>Action</td>
+            </tr>
+         </thead>
+         <tbody id="body-table"></tbody>
+         <!-- Table rows will be dynamically added here -->
+      </table>
+
+      <button id="add-book-btn">Add Book</button>
+      <script src="script.js"></script>
+   </body>
+</html>
