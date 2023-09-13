@@ -1,0 +1,86 @@
+<div class="card">
+  <h1>Add New Items</h1>
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>:</td>
+      <td>
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Item Name..."
+          [(ngModel)]="itemName"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>:</td>
+      <td>
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Item Description..."
+          [(ngModel)]="itemDescription"
+        />
+      </td>
+    </tr>
+    <!-- <tr>
+      <td>Image</td>
+      <td>:</td>
+      <td>
+        <input type="file" name="" id="" [(ngModel)]="itemFile" />
+      </td>
+    </tr> -->
+    <tr>
+      <td>Stock</td>
+      <td>:</td>
+      <td>
+        <input
+          type="number"
+          name=""
+          id=""
+          placeholder="Item Stock..."
+          [(ngModel)]="itemStock"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <button class="btn-primary" (click)="onSubmit()">Add Item</button>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="cards-container">
+  <!-- <li *ngFor="let card of cards">
+    <p>{{ card.id }}</p>
+    <p>{{ card.title }}</p>
+    <p>{{ card.description }}</p>
+    <p>{{ card.imageUrl }}</p>
+    <p>{{ card.stock }}</p>
+  </li> -->
+  <div class="card" *ngFor="let card of cards">
+    <img src="{{ card.imageUrl }}" alt="Smartphone 1" />
+    <h2>{{ card.title }}</h2>
+    <p class="pb-1">
+      {{ card.description }}
+    </p>
+    <p *ngIf="card.stock; else ifEmpty">Stock : {{ card.stock }}</p>
+    <ng-template #ifEmpty>
+      <p>Out Of Stock !</p>
+    </ng-template>
+    <button
+      class="btn-primary"
+      (click)="onBuy(card.id)"
+      [disabled]="!card.stock"
+    >
+      Buy
+    </button>
+  </div>
+</div>
