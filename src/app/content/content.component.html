@@ -1,0 +1,11 @@
+<app-carousel></app-carousel>
+<div class="container">
+  <app-inputs (fsCreated)="fuelStationAdd($event)"></app-inputs>
+  <div class="row">
+    <app-card
+      *ngFor="let fuelElement of fuelElements"
+      [fuelsElement]="fuelElement"
+      (fuelHasVisited)="fuelStationVisit($event)"
+    ></app-card>
+  </div>
+</div>

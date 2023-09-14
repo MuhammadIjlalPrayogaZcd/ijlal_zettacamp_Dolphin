@@ -1,0 +1,22 @@
+<div class="col-md-4 mb-20">
+  <div class="card" style="width: 23rem">
+    <img
+      src="https://images.unsplash.com/photo-1540928696360-3f168184d8ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+      class="card-img-top"
+      alt="post-image"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ element.title }}</h5>
+      <p class="card-text">{{ element.description }}</p>
+      <p *ngIf="element.hasVisit; else ifNoVisit">
+        Has visit {{ element.hasVisit }} times
+      </p>
+      <ng-template #ifNoVisit>
+        <p>There is no visit yet.</p>
+      </ng-template>
+      <button class="btn btn-primary" (click)="onVisit(element.id)">
+        Visit
+      </button>
+    </div>
+  </div>
+</div>
