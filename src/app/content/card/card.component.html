@@ -1,0 +1,24 @@
+<div class="col-md-4 mb-20">
+  <div class="card" style="width: 23rem">
+    <div class="card-body">
+      <h5 class="card-title">{{ element.title }}</h5>
+      <p class="card-text">{{ element.description }}</p>
+      <p *ngIf="element.hasDone; else ifNoVisit" class="text-success">
+        Marked As Done
+      </p>
+      <ng-template #ifNoVisit>
+        <p class="text-danger">Task not done yet.</p>
+      </ng-template>
+      <button
+        class="btn btn-primary mr-5 ml-5"
+        (click)="onDone(element.id)"
+        [disabled]="element.hasDone"
+      >
+        Done
+      </button>
+      <button class="btn btn-danger mr-5 ml-5" (click)="onDelete(element.id)">
+        Delete Task
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+  <app-inputs (taskCreated)="taskAdd($event)"></app-inputs>
+  <div class="row">
+    <app-card
+      *ngFor="let taskElement of taskElements"
+      [taskElements]="taskElement"
+      (taskHasDoned)="taskDone($event)"
+      (taskHasDeleted)="taskDeleted($event)"
+    >
+    </app-card>
+  </div>
+</div>

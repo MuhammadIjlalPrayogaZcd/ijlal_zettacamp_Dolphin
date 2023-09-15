@@ -1,0 +1,63 @@
+<div class="row align-items-center g-lg-5 py-5">
+  <div class="col-lg-7 text-center text-lg-start">
+    <h1 class="display-4 fw-bold lh-1 mb-3">New Task</h1>
+    <p class="col-lg-10 fs-4">
+      Fill the forms and click Add Button to add new task.
+    </p>
+  </div>
+  <div class="col-md-10 mx-auto col-lg-5">
+    <div class="p-4 p-md-5 border rounded-3 bg-light">
+      <div class="form-floating mb-3">
+        <!-- <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder=""
+          [(ngModel)]="taskTitle"
+        /> -->
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder=""
+          #taskTitle
+        />
+        <label for="floatingInput">Task Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <!-- <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder=""
+          [(ngModel)]="taskDescription"
+        /> -->
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder=""
+          #taskDescription
+        />
+        <label for="floatingInput">Task Description</label>
+      </div>
+      <!-- <div class="form-floating mb-3">
+        <input
+          type="number"
+          min="0"
+          class="form-control"
+          id="floatingInput"
+          placeholder=""
+          [(ngModel)]="taskHasDone"
+        />
+        <label for="floatingInput">Fuel Station Visits</label>
+      </div> -->
+      <button
+        class="w-100 btn btn-lg btn-primary"
+        (click)="onAddTask(taskTitle, taskDescription)"
+      >
+        Add New Task
+      </button>
+    </div>
+  </div>
+</div>
